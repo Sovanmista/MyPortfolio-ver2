@@ -128,9 +128,7 @@ const CertificatesSection = () => {
                   alt={certificate.name}
                   className="w-full h-48 object-cover rounded-t-xl"
                 />
-                <div className="absolute top-4 right-4">
-                  <Tag className="h-6 w-6 text-blue-500 bg-white rounded-full p-1" />
-                </div>
+              
               </div>
 
               <div className="p-6">
