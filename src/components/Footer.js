@@ -44,7 +44,7 @@ const Footer = () => {
           <div className="lg:col-span-2 ">
             <h2 className="text-white text-lg font-semibold mb-4">Susovan Mishra</h2>
             <p className="text-gray-400 mb-4">
-              Making the world a better place through innovative solutions and exceptional customer service.
+              Learn, Implement, Grow, Repeat..
             </p>
             
             {/* Contact Information */}
