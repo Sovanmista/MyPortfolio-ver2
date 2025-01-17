@@ -1,12 +1,35 @@
 import logo from './logo.svg';
 import './App.css';
-import Photo from './Assets/pngtree-flat-under-construction-sign-background-design-png-image_6471962.png';
-
+import {BrowserRouter, Routes, Route} from 'react-router-dom';
+import Header from "./components/Header"
+import Hero from './components/Hero'
+import Projects from './components/Projcts'
+import Education from './components/Education'
+import Certifications from './components/Certifications'
+import Contacts from './components/Contacts'
+import Footer from './components/Footer';
+import Main from './components/Main';
 function App() {
   return (
-    <div className="App">
-      <img style={{width:"100%", height:"100vh"}} src={Photo} alt="Under Construction" />
-    </div>
+    <BrowserRouter>
+     <div className="App">
+     <Header/>
+      <Hero/>
+      <Projects/>
+      <Education/>
+     
+      <Certifications/>
+     
+      <Footer/>
+      <Routes>
+          <Route/>
+      </Routes>
+      
+
+       {/* <Main/> */}
+      </div>
+    </BrowserRouter>
+   
   );
 }
 
