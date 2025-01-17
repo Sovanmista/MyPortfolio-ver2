@@ -39,3 +39,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+/* For the entire scrollbar */
+::-webkit-scrollbar {
+  width: 12px; /* Width of the scrollbar */
+}
+
+/* For the scrollbar track */
+::-webkit-scrollbar-track {
+  background: #2b395f; /* Track background */
+    /* Rounded corners */
+}
+
+/* For the scrollbar thumb */
+::-webkit-scrollbar-thumb {
+  background: yellow; /* Thumb color */
+  border-radius: 6px; /* Rounded corners */
+}
+
+/* For the scrollbar thumb when hovered */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(182, 182, 104); /* Darker thumb color on hover */
+}

@@ -1,5 +1,5 @@
 import * as motion from "motion/react-client";
-import Photo from "../Assets/WhatsApp Image 2025-01-14 at 8.07.47 PM.jpeg";
+import Photo from "../Assets/WhatsApp Image 2025-01-14 at 8.07.47 PM-fotor-20250117185835.png";
 import { FileDown } from "lucide-react";
 import Resume from "../Assets/Susovan Mishra RESUME TYPE2 (3) version 666.pdf";
 import Tilt from "./Tilt";
@@ -66,7 +66,7 @@ export default function Example() {
               animate={{ opacity: 1, scale: 1.2 }}
               transition={{
                 duration: 0.8,
-                delay: 0,
+                delay: 1,
                 ease: [0, 0.71, 0.2, 1.01],
               }}
               whileHover={{ scale: 1.4 }}
