@@ -2,6 +2,7 @@ import React from 'react';
 import { GraduationCap, Calendar, MapPin, Building, Percent } from 'lucide-react';
 import { motion } from "framer-motion";
 
+import ParticlesBg from 'particles-bg'
 const EducationTimeline = () => {
   const educationHistory = [
     {
@@ -31,8 +32,9 @@ const EducationTimeline = () => {
   ];
 
   return (
-    <div  className="relative mx-auto p-20 bg-gray-900 overflow-hidden min-h-screen">
+    <div  className="mx-auto p-20 bg-gray-900  min-h-screen">
       {/* Background Gradient Circle */}
+      <ParticlesBg type="circle" bg={true} />
       <svg
         viewBox="0 0 1024 1024"
         aria-hidden="true"

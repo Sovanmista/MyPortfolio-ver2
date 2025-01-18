@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState} from "react";
 import { Medal, Calendar, ExternalLink, Search, Tag } from "lucide-react";
 import { Description } from "@headlessui/react";
 import { motion } from "framer-motion";
@@ -8,6 +8,7 @@ import Weather from "../Assets/Screenshot 2025-01-17 154930.png";
 import SkillSwap from "../Assets/screencapture-skillswap-ver-1-netlify-app-2025-01-17-15_52_30.png";
 import Dashboard from "../Assets/screencapture-glittery-sprinkles-227e0b-netlify-app-2025-01-17-15_55_27.png";
 import Portfolio from "../Assets/Screenshot 2025-01-17 160028.png";
+import ParticlesBg from 'particles-bg'
 const CertificatesSection = () => {
   const [searchTerm, setSearchTerm] = useState("");
   const [selectedCategory, setSelectedCategory] = useState("All");
@@ -95,7 +96,9 @@ const CertificatesSection = () => {
 
   return (
     <div id="projects" className="bg-gray-900 mx-auto pt-6 pb-20 px-20">
+     
       <div className="text-center mb-12">
+      <ParticlesBg type="circle" bg={true} />
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
@@ -106,7 +109,7 @@ const CertificatesSection = () => {
           My Projects
         </motion.h2>
       </div>
-
+      <ParticlesBg type="circle" bg={true} />
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
         {certificates.map((certificate, index) => (
           <motion.div

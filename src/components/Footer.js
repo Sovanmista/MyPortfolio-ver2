@@ -36,7 +36,7 @@ const Footer = () => {
   ];
 
   return (
-    <footer  className="bg-gray-900 text-gray-300">
+    <footer  className="bg-gray-900 bg-opacity-95 text-gray-300">
       {/* Main Footer Content */}
       <div id='contacts' className="max-w-7xl mx-auto pt-12 px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5  gap-8 pb-12">
