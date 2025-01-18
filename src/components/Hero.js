@@ -46,13 +46,14 @@ export default function Example() {
               <div className="mt-8 sm:mt-10 flex flex-wrap items-center justify-center lg:justify-start gap-4">
                 <a
                   href="#contacts"
-                  download="Susovan_Resume.pdf"
+               
                   className="w-full sm:w-auto rounded-md bg-white px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-gray-100 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white"
                 >
                   Contact Me
                 </a>
                 <a
                   href={Resume}
+                     download="Susovan_Resume.pdf"
                   className="w-full sm:w-auto rounded-md bg-yellow-300 px-3.5 py-2.5 text-sm font-semibold text-gray-900 shadow-sm hover:bg-yellow-200 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-white flex items-center justify-center gap-2"
                 >
                   <FileDown className="h-4 w-4" />
