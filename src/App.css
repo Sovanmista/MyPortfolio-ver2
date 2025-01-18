@@ -61,3 +61,6 @@
 ::-webkit-scrollbar-thumb:hover {
   background: rgb(182, 182, 104); /* Darker thumb color on hover */
 }
+html, body {
+  overflow-x: hidden; /* Hides horizontal overflow */
+}
