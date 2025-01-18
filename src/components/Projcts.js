@@ -1,18 +1,15 @@
-import React, { useState} from "react";
-import { Medal, Calendar, ExternalLink, Search, Tag } from "lucide-react";
-import { Description } from "@headlessui/react";
+import React, { useState } from "react";
+import { Medal, Calendar, ExternalLink } from "lucide-react";
 import { motion } from "framer-motion";
+import ParticlesBg from "particles-bg";
 import Billit from "../Assets/screencapture-billit-8omd-vercel-app-2025-01-13-22_24_51.png";
 import DineNow from "../Assets/screencapture-strong-concha-7b3c83-netlify-app-2025-01-17-15_47_30.png";
 import Weather from "../Assets/Screenshot 2025-01-17 154930.png";
 import SkillSwap from "../Assets/screencapture-skillswap-ver-1-netlify-app-2025-01-17-15_52_30.png";
 import Dashboard from "../Assets/screencapture-glittery-sprinkles-227e0b-netlify-app-2025-01-17-15_55_27.png";
 import Portfolio from "../Assets/Screenshot 2025-01-17 160028.png";
-import ParticlesBg from 'particles-bg'
-const CertificatesSection = () => {
-  const [searchTerm, setSearchTerm] = useState("");
-  const [selectedCategory, setSelectedCategory] = useState("All");
 
+const CertificatesSection = () => {
   const certificates = [
     {
       id: 1,
@@ -95,83 +92,72 @@ const CertificatesSection = () => {
   ];
 
   return (
-    <div id="projects" className="bg-gray-900 mx-auto pt-6 pb-20 px-20">
-     
+    <div id="projects" className="bg-gray-900 mx-auto py-10 px-4 sm:px-6 lg:px-20">
+       
       <div className="text-center mb-12">
-      <ParticlesBg type="circle" bg={true} />
+      
         <motion.h2
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true, margin: "-100px" }}
+          viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="text-3xl font-bold text-yellow-300 mb-4 p-20"
+          className="text-2xl sm:text-3xl lg:text-4xl font-bold text-yellow-300 mb-6"
         >
           My Projects
         </motion.h2>
       </div>
-      <ParticlesBg type="circle" bg={true} />
-      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        
         {certificates.map((certificate, index) => (
           <motion.div
             key={certificate.id}
             initial={{ opacity: 0, y: 50 }}
             whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true, margin: "-100px" }}
+            viewport={{ once: true }}
             transition={{
               duration: 0.5,
               delay: index * 0.2,
               ease: "easeOut",
             }}
-            className="mb-8 relative"
+            className="relative"
           >
-            <div className="bg-gray-800 bg-opacity-90 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 h-full">
+            <div className="bg-gray-800 bg-opacity-90 rounded-xl shadow-lg hover:shadow-xl transition-shadow duration-300 flex flex-col h-full">
               <div className="relative">
                 <img
                   src={certificate.image}
                   alt={certificate.name}
                   className="w-full h-48 object-cover rounded-t-xl"
                 />
-              
               </div>
-
-              <div className="p-6">
-                <div className="flex items-start justify-between mb-4">
-                  <div>
-                    <h3 className="text-xl font-bold text-yellow-300 mb-2">
-                      {certificate.name}
-                    </h3>
-                  </div>
-                </div>
-
+              <div className="p-4 sm:p-6 flex flex-col flex-grow">
+                <h3 className="text-lg sm:text-xl font-bold text-yellow-300 mb-2">
+                  {certificate.name}
+                </h3>
                 <div className="flex items-center text-sm text-white mb-4">
                   <Calendar className="h-4 w-4 mr-2" />
                   <span>{certificate.issueDate}</span>
-                  {certificate.expiryDate && (
-                    <span className="ml-2">- {certificate.expiryDate}</span>
-                  )}
+                  {certificate.expiryDate && <span className="ml-2">- {certificate.expiryDate}</span>}
                 </div>
-
-                <div className="text-left pb-6">
-                  <p className="text-white text-opacity-85">
-                    {certificate.description}
-                  </p>
-                </div>
-
-                <div className="flex items-center justify-between">
-                <button className="flex items-center text-yellow-300 text-opacity-80 hover:text-yellow-500 transition-colors">
-  <a href={certificate.live} target="_blank" rel="noopener noreferrer" className="flex items-center">
-    <span className="mr-1">Live Project</span>
-    <ExternalLink className="h-4 w-4" />
-  </a>
-</button>
-
-<button className="flex items-center text-yellow-300 text-opacity-80 hover:text-yellow-500 transition-colors">
-  <a href={certificate.github} target="_blank" rel="noopener noreferrer" className="flex items-center">
-    <span className="mr-1">Github</span>
-    <ExternalLink className="h-4 w-4" />
-  </a>
-</button>
-
+                <p className="text-white text-left text-opacity-85 mb-6">{certificate.description}</p>
+                <div className="mt-auto flex items-center justify-between space-x-4">
+                  <a
+                    href={certificate.live}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-yellow-300 text-opacity-80 hover:text-yellow-500 transition-colors"
+                  >
+                    <span className="mr-1">Live Project</span>
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
+                  <a
+                    href={certificate.github}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center text-yellow-300 text-opacity-80 hover:text-yellow-500 transition-colors"
+                  >
+                    <span className="mr-1">GitHub</span>
+                    <ExternalLink className="h-4 w-4" />
+                  </a>
                 </div>
               </div>
             </div>
