@@ -3,7 +3,7 @@ import { FileDown } from 'lucide-react';
 import Tilt from './Tilt';
 import * as motion from 'motion/react-client';
 import ParticlesBg from 'particles-bg';
-import Resume from '../Assets/Susovan Mishra RESUME TYPE2 (3) version 999.pdf';
+import Resume from '../Assets/Susovan Mishra RESUME TYPE2 (3) version999.pdf';
 import Photo from '../Assets/WhatsApp Image 2025-01-14 at 8.07.47 PM-fotor-20250117185835.png';
 export default function Example() {
   const tiltOptions = {
