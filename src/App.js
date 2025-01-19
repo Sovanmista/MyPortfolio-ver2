@@ -8,7 +8,7 @@ import Education from './components/Education'
 import Certifications from './components/Certifications'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer';
-import Main from './components/Main';
+
 function App() {
   return (
     <BrowserRouter>
