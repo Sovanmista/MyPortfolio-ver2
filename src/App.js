@@ -8,6 +8,7 @@ import Education from './components/Education'
 import Certifications from './components/Certifications'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer';
+import Experience from './components/Experience';
 
 function App() {
   return (
@@ -16,10 +17,11 @@ function App() {
      <Header/>
       <Hero/>
       <Projects/>
+      <Experience/>
       <Education/>
      
       <Certifications/>
-     
+
       <Footer/>
       <Routes>
           <Route/>
