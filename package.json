@@ -14,9 +14,11 @@
     "react": "^18.0.0",
     "react-bootstrap": "^2.10.7",
     "react-dom": "^18.0.0",
+    "react-loader-spinner": "^6.1.6",
     "react-mouse-particles": "^1.1.5",
     "react-router-dom": "^7.1.1",
     "react-scripts": "5.0.1",
+    "react-scroll-to-top": "^3.0.0",
     "react-tsparticles": "^2.12.2",
     "vanilla-tilt": "^1.8.1",
     "web-vitals": "^4.2.4"

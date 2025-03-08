@@ -34,26 +34,7 @@ const EducationTimeline = () => {
   return (
     <div  className="mx-auto p-20 bg-gray-900  min-h-screen">
       {/* Background Gradient Circle */}
-      <ParticlesBg type="circle" bg={true} />
-      <svg
-        viewBox="0 0 1024 1024"
-        aria-hidden="true"
-        className="absolute left-1/2 top-1/2 -z-10 w-[64rem] h-[64rem] -translate-x-1/2 -translate-y-1/2 [mask-image:radial-gradient(closest-side,white,transparent)]"
-      >
-        <circle
-          r={512}
-          cx={512}
-          cy={512}
-          fill="url(#gradient)"
-          fillOpacity="0.7"
-        />
-        <defs>
-          <radialGradient id="gradient">
-            <stop stopColor="#7775D6" />
-            <stop offset={1} stopColor="#E935C1" />
-          </radialGradient>
-        </defs>
-      </svg>
+    
         
       <motion.h2 
         initial={{ opacity: 0 }}

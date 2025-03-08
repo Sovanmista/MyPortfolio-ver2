@@ -16,7 +16,7 @@ export default function Example() {
 
   return (
     <div className="bg-yellow shadow-lg">
-      <header className="absolute bg-gray-1000 inset-x-0 top-0 z-50">
+      <header className="absolute bg-gray-1000  inset-x-0 top-0 z-50">
         <nav aria-label="Global" className="flex items-center justify-between p-6 lg:px-8">
           <div className="flex lg:flex-1">
             

@@ -9,11 +9,13 @@ import Certifications from './components/Certifications'
 import Contacts from './components/Contacts'
 import Footer from './components/Footer';
 import Experience from './components/Experience';
+import ScrollToTop from "react-scroll-to-top";
 
 function App() {
   return (
     <BrowserRouter>
-     <div className="App">
+     <div className="App flex">
+     <div>
      <Header/>
       <Hero/>
       <Projects/>
@@ -26,11 +28,15 @@ function App() {
       <Routes>
           <Route/>
       </Routes>
+     </div>
+    
       
 
        {/* <Main/> */}
+       <ScrollToTop style={{backgroundColor:"#09192e",boxShadow:"30px", borderRadius:"40px"}} color='yellow' width='40' smooth />
       </div>
     </BrowserRouter>
+   
    
   );
 }
